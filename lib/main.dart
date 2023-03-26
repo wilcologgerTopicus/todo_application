@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screen/todo_screen.dart';
+import 'package:todo_application/views/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Passing Data',
-      home: TodosScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
